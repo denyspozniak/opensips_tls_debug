@@ -1,0 +1,520 @@
+
+
+---start 3174886 (opensips 3174886 3174449  0 May02 ?        00:01:11 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=4, events=0x7f674d0a5720, maxevents=41, timeout=5000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=4, events=0x7f674d0a5720, maxevents=41, timeout=5000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eeee30d in tcp_start_listener ()
+No symbol table info available.
+#2  0x000055902ed77a47 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174886) detached]
+
+
+---start 3174885 (opensips 3174885 3174449  0 May02 ?        00:09:40 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=185, events=0x7f674d0a5720, maxevents=2, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=185, events=0x7f674d0a5720, maxevents=2, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902ee242fd in ?? ()
+No symbol table info available.
+#2  0x000055902ee2558d in start_timer_extra_processes ()
+No symbol table info available.
+#3  0x000055902ed779c4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174885) detached]
+
+
+---start 3174884 (opensips 3174884 3174449  0 May02 ?        00:03:59 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=183, events=0x7f674d0a5720, maxevents=2, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=183, events=0x7f674d0a5720, maxevents=2, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902ee242fd in ?? ()
+No symbol table info available.
+#2  0x000055902ee2558d in start_timer_extra_processes ()
+No symbol table info available.
+#3  0x000055902ed779c4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174884) detached]
+
+
+---start 3174883 (opensips 3174883 3174449  0 May02 ?        00:03:09 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=181, events=0x7f674d0a5720, maxevents=2, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=181, events=0x7f674d0a5720, maxevents=2, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902ee242fd in ?? ()
+No symbol table info available.
+#2  0x000055902ee2558d in start_timer_extra_processes ()
+No symbol table info available.
+#3  0x000055902ed779c4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174883) detached]
+
+
+---start 3174882 (opensips 3174882 3174449  0 May02 ?        00:03:02 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=179, events=0x7f674d0a5720, maxevents=2, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=179, events=0x7f674d0a5720, maxevents=2, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902ee242fd in ?? ()
+No symbol table info available.
+#2  0x000055902ee2558d in start_timer_extra_processes ()
+No symbol table info available.
+#3  0x000055902ed779c4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174882) detached]
+
+
+---start 3174881 (opensips 3174881 3174449  0 May02 ?        00:02:37 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=177, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=177, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef4ced in tcp_worker_proc_loop ()
+No symbol table info available.
+#2  0x000055902eeed7f6 in tcp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779b4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174881) detached]
+
+
+---start 3174880 (opensips 3174880 3174449  0 May02 ?        00:02:29 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=175, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=175, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef4ced in tcp_worker_proc_loop ()
+No symbol table info available.
+#2  0x000055902eeed7f6 in tcp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779b4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174880) detached]
+
+
+---start 3174879 (opensips 3174879 3174449  0 May02 ?        00:02:23 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=173, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=173, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef4ced in tcp_worker_proc_loop ()
+No symbol table info available.
+#2  0x000055902eeed7f6 in tcp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779b4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174879) detached]
+
+
+---start 3174878 (opensips 3174878 3174449  0 May02 ?        00:02:20 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=171, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=171, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef4ced in tcp_worker_proc_loop ()
+No symbol table info available.
+#2  0x000055902eeed7f6 in tcp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779b4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174878) detached]
+
+
+---start 3174877 (opensips 3174877 3174449  0 May02 ?        00:02:11 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=169, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=169, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef4ced in tcp_worker_proc_loop ()
+No symbol table info available.
+#2  0x000055902eeed7f6 in tcp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779b4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174877) detached]
+
+
+---start 3174876 (opensips 3174876 3174449  0 May02 ?        00:02:07 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=167, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=167, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef4ced in tcp_worker_proc_loop ()
+No symbol table info available.
+#2  0x000055902eeed7f6 in tcp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779b4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174876) detached]
+
+
+---start 3174875 (opensips 3174875 3174449  0 May02 ?        00:02:04 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=165, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=165, events=0x7f674d0a5720, maxevents=4, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef4ced in tcp_worker_proc_loop ()
+No symbol table info available.
+#2  0x000055902eeed7f6 in tcp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779b4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174875) detached]
+
+
+---start 3174874 (opensips 3174874 3174449  0 May02 ?        00:03:09 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=163, events=0x7f674d0a5720, maxevents=5, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=163, events=0x7f674d0a5720, maxevents=5, timeout=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef4ced in tcp_worker_proc_loop ()
+No symbol table info available.
+#2  0x000055902eeed7f6 in tcp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779b4 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174874) detached]
+
+
+---start 3174873 (opensips 3174873 3174449  0 May02 ?        00:02:16 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=161, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=161, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174873) detached]
+
+
+---start 3174872 (opensips 3174872 3174449  0 May02 ?        00:02:14 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=159, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=159, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174872) detached]
+
+
+---start 3174871 (opensips 3174871 3174449  0 May02 ?        00:02:13 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674ddf8f17 in __GI_sched_yield () at ../sysdeps/unix/syscall-template.S:120
+#0  0x00007f674ddf8f17 in __GI_sched_yield () at ../sysdeps/unix/syscall-template.S:120
+No locals.
+#1  0x00007f670cca9184 in ?? () from /usr/lib/x86_64-linux-gnu/opensips/modules/tm.so
+No symbol table info available.
+#2  0x00007f670ccaaea0 in build_uac_req () from /usr/lib/x86_64-linux-gnu/opensips/modules/tm.so
+No symbol table info available.
+#3  0x00007f670ccc04ec in t_uac () from /usr/lib/x86_64-linux-gnu/opensips/modules/tm.so
+No symbol table info available.
+#4  0x00007f670c4c9ca8 in ds_check_timer () from /usr/lib/x86_64-linux-gnu/opensips/modules/dispatcher.so
+No symbol table info available.
+#5  0x000055902ee237eb in handle_timer_job ()
+No symbol table info available.
+#6  0x000055902eef6e2d in ?? ()
+No symbol table info available.
+#7  0x000055902eef7f31 in ?? ()
+No symbol table info available.
+#8  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#9  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174871) detached]
+
+
+---start 3174870 (opensips 3174870 3174449  0 May02 ?        00:02:11 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=155, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=155, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174870) detached]
+
+
+---start 3174869 (opensips 3174869 3174449  0 May02 ?        00:02:11 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=153, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=153, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174869) detached]
+
+
+---start 3174868 (opensips 3174868 3174449  0 May02 ?        00:02:30 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=151, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=151, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174868) detached]
+
+
+---start 3174867 (opensips 3174867 3174449  0 May02 ?        00:02:09 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=149, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=149, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174867) detached]
+
+
+---start 3174866 (opensips 3174866 3174449  0 May02 ?        00:02:09 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=147, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=147, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174866) detached]
+
+
+---start 3174865 (opensips 3174865 3174449  0 May02 ?        00:02:08 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=145, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=145, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174865) detached]
+
+
+---start 3174864 (opensips 3174864 3174449  0 May02 ?        00:02:09 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=143, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=143, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174864) detached]
+
+
+---start 3174863 (opensips 3174863 3174449  0 May02 ?        00:02:08 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=141, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=141, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174863) detached]
+
+
+---start 3174862 (opensips 3174862 3174449  0 May02 ?        00:02:14 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=139, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=139, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174862) detached]
+
+
+---start 3174861 (opensips 3174861 3174449  0 May02 ?        00:02:14 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de13de3 in epoll_wait (epfd=137, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f674de13de3 in epoll_wait (epfd=137, events=0x7f674d0a5720, maxevents=4, timeout=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000055902eef7ccd in ?? ()
+No symbol table info available.
+#2  0x000055902eefd385 in udp_start_processes ()
+No symbol table info available.
+#3  0x000055902ed779a1 in main ()
+No symbol table info available.
+[Inferior 1 (process 3174861) detached]
+
+
+---start 3174860 (opensips 3174860 3174449  0 May02 ?        00:23:52 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de09844 in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7ffcabc55270) at ../sysdeps/unix/sysv/linux/select.c:69
+#0  0x00007f674de09844 in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7ffcabc55270) at ../sysdeps/unix/sysv/linux/select.c:69
+        sc_ret = -514
+        sc_ret = <optimized out>
+        s = <optimized out>
+        us = <optimized out>
+        ns = <optimized out>
+        ts64 = {tv_sec = 0, tv_nsec = 78064688}
+        pts64 = 0x7ffcabc551a0
+        r = <optimized out>
+#1  0x000055902ee22ffb in start_timer_processes ()
+No symbol table info available.
+#2  0x000055902ed7783f in main ()
+No symbol table info available.
+[Inferior 1 (process 3174860) detached]
+
+
+---start 3174859 (opensips 3174859 3174449  0 May02 ?        00:46:13 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674de09844 in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7ffcabc55250) at ../sysdeps/unix/sysv/linux/select.c:69
+#0  0x00007f674de09844 in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7ffcabc55250) at ../sysdeps/unix/sysv/linux/select.c:69
+        sc_ret = -514
+        sc_ret = <optimized out>
+        s = <optimized out>
+        us = <optimized out>
+        ns = <optimized out>
+        ts64 = {tv_sec = 0, tv_nsec = 6829632}
+        pts64 = 0x7ffcabc551a0
+        r = <optimized out>
+#1  0x000055902ee22d95 in start_timer_processes ()
+No symbol table info available.
+#2  0x000055902ed7783f in main ()
+No symbol table info available.
+[Inferior 1 (process 3174859) detached]
+
+
+---start 3174858 (opensips 3174858 3174449  0 May02 ?        00:01:57 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674dd8e642 in _IO_no_init (fp=fp@entry=0x7ffcabc54900, flags=flags@entry=32768, orientation=orientation@entry=-1, wd=wd@entry=0x0, jmp=jmp@entry=0x0) at ./libio/genops.c:564
+#0  0x00007f674dd8e642 in _IO_no_init (fp=fp@entry=0x7ffcabc54900, flags=flags@entry=32768, orientation=orientation@entry=-1, wd=wd@entry=0x0, jmp=jmp@entry=0x0) at ./libio/genops.c:564
+No locals.
+#1  0x00007f674dd89722 in __vsnprintf_internal (string=0x55902f02edc0 <ctime_buf> "Wed May  8 12:02:34", maxlen=<optimized out>, format=0x7f674dea5660 <format> "%.3s %.3s%3d %.2d:%.2d:%.2d %d\n", args=args@entry=0x7ffcabc54a80, mode_flags=mode_flags@entry=0) at ./libio/vsnprintf.c:110
+        sf = {f = {_sbf = {_f = {_flags = 383058120, _IO_read_ptr = 0x7ffcabc54bb0 "\004", _IO_read_end = 0x7ffcabc54a38 "", _IO_read_base = 0x0, _IO_write_base = 0x0, _IO_write_ptr = 0x7f6716d500d0 "\340:\325\026g\177", _IO_write_end = 0x7ffcabc54970 "", _IO_buf_base = 0x7f6716d533ab "", _IO_buf_end = 0x20c8eae00 <error: Cannot access memory at address 0x20c8eae00>, _IO_save_base = 0x7f6700000002 <error: Cannot access memory at address 0x7f6700000002>, _IO_backup_base = 0x0, _IO_save_end = 0x205 <error: Cannot access memory at address 0x205>, _markers = 0x7f670ca7e918, _chain = 0x20000003, _fileno = 0, _flags2 = 0, _old_offset = 6264583230866261760, _cur_column = 1, _vtable_offset = 0 '\000', _shortbuf = "", _lock = 0x0, _offset = 140723190319664, _codecvt = 0x7ffcabc54bb0, _wide_data = 0x7f670ca66c90, _freeres_list = 0x0, _freeres_buf = 0x7ffcabc54b20, __pad5 = 140080567008000, _mode = 0, _unused2 = "\000\000\000\000\260Kū\374\177\000\000\001\000\000\000\000\000\000"}, vtable = 0x0}, _s = {_allocate_buffer_unused = 0x0, _free_buffer_unused = 0x7f670c6fbac7}}, overflow_buf = " Jū\374\177", '\000' <repeats 18 times>, "9\330o\fg\177\000\000\b\001\325\026g\177\000\000\005\002\000\000\000\000\000\000\000\022\244\fg\177\000\000\211J\344.\220U\000"}
+        ret = <optimized out>
+#2  0x00007f674dd63ca2 in __GI___snprintf (s=s@entry=0x55902f02edc0 <ctime_buf> "Wed May  8 12:02:34", maxlen=maxlen@entry=26, format=format@entry=0x7f674dea5660 <format> "%.3s %.3s%3d %.2d:%.2d:%.2d %d\n") at ./stdio-common/snprintf.c:31
+        arg = {{gp_offset = 24, fp_offset = 48, overflow_arg_area = 0x7ffcabc54b60, reg_save_area = 0x7ffcabc54aa0}}
+        done = <optimized out>
+#3  0x00007f674ddce4a7 in asctime_internal (tp=<optimized out>, buf=buf@entry=0x55902f02edc0 <ctime_buf> "Wed May  8 12:02:34", buflen=buflen@entry=26) at ./time/asctime.c:56
+        n = <optimized out>
+#4  0x00007f674ddce51a in __asctime_r (tp=<optimized out>, buf=buf@entry=0x55902f02edc0 <ctime_buf> "Wed May  8 12:02:34") at ./time/asctime.c:77
+No locals.
+#5  0x00007f674ddce60b in ctime_r (t=<optimized out>, buf=0x55902f02edc0 <ctime_buf> "Wed May  8 12:02:34") at ./time/ctime_r.c:27
+        tm = {tm_sec = 34, tm_min = 2, tm_hour = 12, tm_mday = 8, tm_mon = 4, tm_year = 124, tm_wday = 3, tm_yday = 128, tm_isdst = 1, tm_gmtoff = 7200, tm_zone = 0x55902f440160 "CEST"}
+#6  0x00007f670cc035ef in tls_dump_cert_info () from /usr/lib/x86_64-linux-gnu/opensips/modules/tls_openssl.so
+No symbol table info available.
+#7  0x00007f670cc04e9b in openssl_init_tls_dom () from /usr/lib/x86_64-linux-gnu/opensips/modules/tls_openssl.so
+No symbol table info available.
+#8  0x00007f670cb344a7 in ?? () from /usr/lib/x86_64-linux-gnu/opensips/modules/tls_mgm.so
+No symbol table info available.
+#9  0x00007f670cb38b18 in ?? () from /usr/lib/x86_64-linux-gnu/opensips/modules/tls_mgm.so
+No symbol table info available.
+#10 0x000055902eecf079 in handle_mi_request ()
+No symbol table info available.
+#11 0x00007f670cc37f40 in mi_fifo_callback () from /usr/lib/x86_64-linux-gnu/opensips/modules/mi_fifo.so
+No symbol table info available.
+#12 0x000055902edde884 in ?? ()
+No symbol table info available.
+#13 0x000055902ede0bed in reactor_proc_loop ()
+No symbol table info available.
+#14 0x00007f670cc3a27f in ?? () from /usr/lib/x86_64-linux-gnu/opensips/modules/mi_fifo.so
+No symbol table info available.
+#15 0x000055902ee0b89c in start_module_procs ()
+No symbol table info available.
+#16 0x000055902ed776bf in main ()
+No symbol table info available.
+[Inferior 1 (process 3174858) detached]
+
+
+---start 3174449 (opensips 3174449       1  0 May02 ?        00:00:55 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f674ddded10 in __libc_pause () at ../sysdeps/unix/sysv/linux/pause.c:29
+#0  0x00007f674ddded10 in __libc_pause () at ../sysdeps/unix/sysv/linux/pause.c:29
+        sc_ret = -514
+        sc_ret = <optimized out>
+#1  0x000055902ed77c7a in main ()
+No symbol table info available.
+[Inferior 1 (process 3174449) detached]
