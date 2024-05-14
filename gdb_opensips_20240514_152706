@@ -1,0 +1,1886 @@
+
+
+---start 1247 (opensips    1247     882  0 14:51 ?        00:00:00 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=4, events=0x7f6c25dca720, maxevents=41, timeout=timeout@entry=5000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=4, events=0x7f6c25dca720, maxevents=41, timeout=timeout@entry=5000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13263d in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at net/../io_wait_loop.h:178
+        ep_event = {events = 598894048, data = {ptr = 0x6b188a2b00007ffc, fd = 32764, u32 = 32764, u64 = 7717069878787604476}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#2  tcp_main_server () at net/net_tcp.c:1726
+        flags = <optimized out>
+        si = <optimized out>
+        n = <optimized out>
+        last_sec = 2127
+        flags = <optimized out>
+        si = <optimized out>
+        n = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "tcp_main_server"
+        now = <optimized out>
+        now = <optimized out>
+        now = <optimized out>
+        now = <optimized out>
+#3  tcp_start_listener () at net/net_tcp.c:2162
+        p_id = <optimized out>
+        ifp_tcp_main = {proc_desc = 0x56356b1dc82d "TCP main", flags = 0, type = TYPE_NONE}
+        __FUNCTION__ = "tcp_start_listener"
+#4  0x000056356afbba47 in main_loop () at ./main.c:255
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 25
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#5  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1247) detached]
+
+
+---start 1246 (opensips    1246     882  0 14:51 ?        00:00:07 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=185, events=0x7f6c25dca720, maxevents=2, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=185, events=0x7f6c25dca720, maxevents=2, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b06844d in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at ./io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 1797504280, data = {ptr = 0x26c4d02000005600, fd = 22016, u32 = 22016, u64 = 2793586504734103040}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b0696dd in start_timer_extra_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>) at ./timer.c:932
+        i = <optimized out>
+        p_id = <optimized out>
+        ifp_th = {proc_desc = 0x56356b188a2b "Timer handler", flags = 4, type = TYPE_TIMER}
+        __FUNCTION__ = "start_timer_extra_processes"
+#3  0x000056356afbb9c4 in main_loop () at ./main.c:249
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 25
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1246) detached]
+
+
+---start 1245 (opensips    1245     882  0 14:51 ?        00:00:05 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=183, events=0x7f6c25dca720, maxevents=2, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=183, events=0x7f6c25dca720, maxevents=2, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b06844d in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at ./io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 1797504280, data = {ptr = 0x26c4d02000005600, fd = 22016, u32 = 22016, u64 = 2793586504734103040}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b0696dd in start_timer_extra_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>) at ./timer.c:932
+        i = <optimized out>
+        p_id = <optimized out>
+        ifp_th = {proc_desc = 0x56356b188a2b "Timer handler", flags = 4, type = TYPE_TIMER}
+        __FUNCTION__ = "start_timer_extra_processes"
+#3  0x000056356afbb9c4 in main_loop () at ./main.c:249
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 24
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1245) detached]
+
+
+---start 1244 (opensips    1244     882  0 14:51 ?        00:00:05 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+__recvmsg_syscall (flags=flags@entry=256, msg=msg@entry=0x7ffc23b25f40, fd=fd@entry=182) at ../sysdeps/unix/sysv/linux/recvmsg.c:27
+#0  __recvmsg_syscall (flags=flags@entry=256, msg=msg@entry=0x7ffc23b25f40, fd=fd@entry=182) at ../sysdeps/unix/sysv/linux/recvmsg.c:27
+        sc_ret = -512
+        sc_ret = <optimized out>
+#1  __libc_recvmsg (fd=fd@entry=182, msg=msg@entry=0x7ffc23b25f40, flags=flags@entry=256) at ../sysdeps/unix/sysv/linux/recvmsg.c:41
+        r = <optimized out>
+#2  0x000056356b1464dc in receive_fd (unix_socket=182, data=data@entry=0x7ffc23b26040, data_len=data_len@entry=8, fd=fd@entry=0x7ffc23b2603c, flags=flags@entry=256) at net/tcp_passfd.c:213
+        msg = {msg_name = 0x0, msg_namelen = 0, msg_iov = 0x7ffc23b25f80, msg_iovlen = 1, msg_control = 0x7ffc23b25f90, msg_controllen = 24, msg_flags = 0}
+        iov = {{iov_base = 0x7ffc23b26040, iov_len = 8}}
+        new_fd = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        cmsg = <optimized out>
+        control_un = {cm = {cmsg_len = 140102468916592, cmsg_level = 1796497707, cmsg_type = 22069, __cmsg_data = 0x7ffc23b25fa0 "Ь\240\345k\177"}, control = "pU\344%l\177\000\000+a\024k5V\000\000Ь\240\345k\177\000"}
+        __FUNCTION__ = "receive_fd"
+#3  0x000056356b12e3cf in tcp_conn_get (id=id@entry=0, ip=ip@entry=0x7ffc23b26110, port=<optimized out>, proto=proto@entry=PROTO_BIN, proto_extra_id=proto_extra_id@entry=0x0, conn=conn@entry=0x7ffc23b26100, conn_fd=0x7ffc23b260fc, send_sock=0x7f6c25a43520) at net/net_tcp.c:552
+        c = 0x7f6bf98c0ef8
+        tmp = 0x7f6bf98c0ef8
+        a = <optimized out>
+        hash = <optimized out>
+        response = {140101724933880, 1}
+        part = <optimized out>
+        n = 16
+        fd = 22069
+        __FUNCTION__ = "tcp_conn_get"
+#4  0x00007f6be5819c76 in proto_bin_send (send_sock=0x7f6c25a43520, buf=0x7f6c25bb4738 "P4CK.", len=46, to=0x7f6be5afd490, id=0) at ./modules/proto_bin/proto_bin.c:158
+        c = 0x7f6c25a80320
+        ip = {af = 2, len = 4, u = {addrl = {94787581000970, 0}, addr32 = {1947745546, 22069, 0, 0}, addr16 = {15626, 29720, 22069, 0, 0, 0, 0, 0}, addr = "\n=\030t5V\000\000\000\000\000\000\000\000\000"}}
+        port = <optimized out>
+        fd = 22069
+        n = <optimized out>
+        __FUNCTION__ = "proto_bin_send"
+#5  0x00007f6be57eee1e in msg_send (send_sock=<optimized out>, proto=7, to=to@entry=0x7f6be5afd490, buf=0x7f6c25bb4738 "P4CK.", len=<optimized out>, msg=0x0, id=0) at ../../forward.h:123
+        out_buff = {s = 0x7f6c25bb4738 "P4CK.", len = 46}
+        port = <optimized out>
+        ip = <optimized out>
+        __FUNCTION__ = "msg_send"
+#6  0x00007f6be57ef91d in send_ping (node=node@entry=0x7f6be5afd468, req_node_list=req_node_list@entry=0) at ./modules/clusterer/topology.c:60
+        now = {tv_sec = 1715693230, tv_usec = 632843}
+        send_buffer = {s = 0x7f6c25bb4738 "P4CK.", len = 46}
+        packet = {buffer = {s = 0x7f6c25bb4738 "P4CK.", len = 46}, front_pointer = 0x7f6c25e45570 ".", size = 300, type = 0, src_id = -450890736}
+        rc = <optimized out>
+        __FUNCTION__ = "send_ping"
+#7  0x00007f6be57f129a in do_action_trans_5 (no_clusters=0, ev_actions_required=0x7ffc23b26330, link_state_to_set=0x7ffc23b26314, node=0x7f6be5afd468) at ./modules/clusterer/topology.c:171
+        __FUNCTION__ = "do_action_trans_5"
+#8  heartbeats_timer () at ./modules/clusterer/topology.c:262
+        now = {tv_sec = 1715693230, tv_usec = 632842}
+        last_ping_int = <optimized out>
+        ping_reply_int = <optimized out>
+        clusters_it = 0x7f6be5afd1b0
+        node = 0x7f6be5afd468
+        ev_actions_required = {0 <repeats 64 times>}
+        no_clusters = 0
+        prev_ls = 0
+        new_ls = -1
+#9  0x000056356b06793b in handle_timer_job () at ./timer.c:1018
+        t = 0x7f6be5b803f8
+        l = <optimized out>
+        _ijiffies = 2129130000
+        _ijiffies_extra = 0
+        __FUNCTION__ = "handle_timer_job"
+#10 0x000056356b067cc5 in handle_io (fm=0x7f6c25c30d78, event_type=1, idx=<optimized out>) at ./timer.c:765
+        n = 633539960
+        __FUNCTION__ = "handle_io"
+#11 0x000056356b0686a9 in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at ./io_wait_loop.h:305
+        ret = <optimized out>
+        n = <optimized out>
+        r = 1
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 1797504280, data = {ptr = 0x26c4d02000005600, fd = 22016, u32 = 22016, u64 = 2793586504734103040}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#12 0x000056356b0696dd in start_timer_extra_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>) at ./timer.c:932
+        i = <optimized out>
+        p_id = <optimized out>
+        ifp_th = {proc_desc = 0x56356b188a2b "Timer handler", flags = 4, type = TYPE_TIMER}
+        __FUNCTION__ = "start_timer_extra_processes"
+#13 0x000056356afbb9c4 in main_loop () at ./main.c:249
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 23
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#14 main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1244) detached]
+
+
+---start 1243 (opensips    1243     882  0 14:51 ?        00:00:04 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=179, events=0x7f6c25dca720, maxevents=2, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=179, events=0x7f6c25dca720, maxevents=2, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b06844d in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at ./io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 1797504280, data = {ptr = 0x26c4d02000005600, fd = 22016, u32 = 22016, u64 = 2793586504734103040}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b0696dd in start_timer_extra_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>) at ./timer.c:932
+        i = <optimized out>
+        p_id = <optimized out>
+        ifp_th = {proc_desc = 0x56356b188a2b "Timer handler", flags = 4, type = TYPE_TIMER}
+        __FUNCTION__ = "start_timer_extra_processes"
+#3  0x000056356afbb9c4 in main_loop () at ./main.c:249
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 22
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1243) detached]
+
+
+---start 1242 (opensips    1242     882  0 14:51 ?        00:00:03 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=177, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=177, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13901d in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at net/../io_wait_loop.h:178
+        ep_event = {events = 21, data = {ptr = 0x6b1e41dd00000000, fd = 0, u32 = 0, u64 = 7718679228803186688}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#2  tcp_worker_proc_loop () at net/net_tcp_proc.c:442
+        __FUNCTION__ = "tcp_worker_proc_loop"
+#3  0x000056356b131b26 in tcp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_tcp.c:2119
+        r = 7
+        n = <optimized out>
+        p_id = <optimized out>
+        reader_fd = {210, 211}
+        si = <optimized out>
+        ifp_sr_tcp = {proc_desc = 0x56356b1dc51d "SIP receiver TCP", flags = 4, type = TYPE_TCP}
+        __FUNCTION__ = "tcp_start_processes"
+        error = <optimized out>
+#4  0x000056356afbb9b4 in main_loop () at ./main.c:243
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 21
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#5  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1242) detached]
+
+
+---start 1241 (opensips    1241     882  0 14:51 ?        00:00:03 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=175, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=175, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13901d in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at net/../io_wait_loop.h:178
+        ep_event = {events = 20, data = {ptr = 0x6b1e41dd00000000, fd = 0, u32 = 0, u64 = 7718679228803186688}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#2  tcp_worker_proc_loop () at net/net_tcp_proc.c:442
+        __FUNCTION__ = "tcp_worker_proc_loop"
+#3  0x000056356b131b26 in tcp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_tcp.c:2119
+        r = 6
+        n = <optimized out>
+        p_id = <optimized out>
+        reader_fd = {210, 211}
+        si = <optimized out>
+        ifp_sr_tcp = {proc_desc = 0x56356b1dc51d "SIP receiver TCP", flags = 4, type = TYPE_TCP}
+        __FUNCTION__ = "tcp_start_processes"
+        error = <optimized out>
+#4  0x000056356afbb9b4 in main_loop () at ./main.c:243
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 20
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#5  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1241) detached]
+
+
+---start 1240 (opensips    1240     882  0 14:51 ?        00:00:03 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=173, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=173, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13901d in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at net/../io_wait_loop.h:178
+        ep_event = {events = 19, data = {ptr = 0x6b1e41dd00000000, fd = 0, u32 = 0, u64 = 7718679228803186688}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#2  tcp_worker_proc_loop () at net/net_tcp_proc.c:442
+        __FUNCTION__ = "tcp_worker_proc_loop"
+#3  0x000056356b131b26 in tcp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_tcp.c:2119
+        r = 5
+        n = <optimized out>
+        p_id = <optimized out>
+        reader_fd = {210, 211}
+        si = <optimized out>
+        ifp_sr_tcp = {proc_desc = 0x56356b1dc51d "SIP receiver TCP", flags = 4, type = TYPE_TCP}
+        __FUNCTION__ = "tcp_start_processes"
+        error = <optimized out>
+#4  0x000056356afbb9b4 in main_loop () at ./main.c:243
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 19
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#5  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1240) detached]
+
+
+---start 1239 (opensips    1239     882  0 14:51 ?        00:00:03 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=171, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=171, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13901d in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at net/../io_wait_loop.h:178
+        ep_event = {events = 18, data = {ptr = 0x6b1e41dd00000000, fd = 0, u32 = 0, u64 = 7718679228803186688}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#2  tcp_worker_proc_loop () at net/net_tcp_proc.c:442
+        __FUNCTION__ = "tcp_worker_proc_loop"
+#3  0x000056356b131b26 in tcp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_tcp.c:2119
+        r = 4
+        n = <optimized out>
+        p_id = <optimized out>
+        reader_fd = {210, 211}
+        si = <optimized out>
+        ifp_sr_tcp = {proc_desc = 0x56356b1dc51d "SIP receiver TCP", flags = 4, type = TYPE_TCP}
+        __FUNCTION__ = "tcp_start_processes"
+        error = <optimized out>
+#4  0x000056356afbb9b4 in main_loop () at ./main.c:243
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 18
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#5  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1239) detached]
+
+
+---start 1238 (opensips    1238     882  0 14:51 ?        00:00:02 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=169, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=169, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13901d in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at net/../io_wait_loop.h:178
+        ep_event = {events = 17, data = {ptr = 0x6b1e41dd00000000, fd = 0, u32 = 0, u64 = 7718679228803186688}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#2  tcp_worker_proc_loop () at net/net_tcp_proc.c:442
+        __FUNCTION__ = "tcp_worker_proc_loop"
+#3  0x000056356b131b26 in tcp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_tcp.c:2119
+        r = 3
+        n = <optimized out>
+        p_id = <optimized out>
+        reader_fd = {210, 211}
+        si = <optimized out>
+        ifp_sr_tcp = {proc_desc = 0x56356b1dc51d "SIP receiver TCP", flags = 4, type = TYPE_TCP}
+        __FUNCTION__ = "tcp_start_processes"
+        error = <optimized out>
+#4  0x000056356afbb9b4 in main_loop () at ./main.c:243
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 17
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#5  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1238) detached]
+
+
+---start 1237 (opensips    1237     882  0 14:51 ?        00:00:02 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=167, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=167, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13901d in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at net/../io_wait_loop.h:178
+        ep_event = {events = 16, data = {ptr = 0x6b1e41dd00000000, fd = 0, u32 = 0, u64 = 7718679228803186688}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#2  tcp_worker_proc_loop () at net/net_tcp_proc.c:442
+        __FUNCTION__ = "tcp_worker_proc_loop"
+#3  0x000056356b131b26 in tcp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_tcp.c:2119
+        r = 2
+        n = <optimized out>
+        p_id = <optimized out>
+        reader_fd = {210, 211}
+        si = <optimized out>
+        ifp_sr_tcp = {proc_desc = 0x56356b1dc51d "SIP receiver TCP", flags = 4, type = TYPE_TCP}
+        __FUNCTION__ = "tcp_start_processes"
+        error = <optimized out>
+#4  0x000056356afbb9b4 in main_loop () at ./main.c:243
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 16
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#5  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1237) detached]
+
+
+---start 1236 (opensips    1236     882  0 14:51 ?        00:00:02 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=165, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=165, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13901d in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at net/../io_wait_loop.h:178
+        ep_event = {events = 15, data = {ptr = 0x6b1e41dd00000000, fd = 0, u32 = 0, u64 = 7718679228803186688}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#2  tcp_worker_proc_loop () at net/net_tcp_proc.c:442
+        __FUNCTION__ = "tcp_worker_proc_loop"
+#3  0x000056356b131b26 in tcp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_tcp.c:2119
+        r = 1
+        n = <optimized out>
+        p_id = <optimized out>
+        reader_fd = {210, 211}
+        si = <optimized out>
+        ifp_sr_tcp = {proc_desc = 0x56356b1dc51d "SIP receiver TCP", flags = 4, type = TYPE_TCP}
+        __FUNCTION__ = "tcp_start_processes"
+        error = <optimized out>
+#4  0x000056356afbb9b4 in main_loop () at ./main.c:243
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 15
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#5  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1236) detached]
+
+
+---start 1235 (opensips    1235     882  0 14:51 ?        00:00:02 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=163, events=0x7f6c25dca720, maxevents=5, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=163, events=0x7f6c25dca720, maxevents=5, timeout=timeout@entry=2000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13901d in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at net/../io_wait_loop.h:178
+        ep_event = {events = 14, data = {ptr = 0x6b1e41dd00000000, fd = 0, u32 = 0, u64 = 7718679228803186688}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#2  tcp_worker_proc_loop () at net/net_tcp_proc.c:442
+        __FUNCTION__ = "tcp_worker_proc_loop"
+#3  0x000056356b131b26 in tcp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_tcp.c:2119
+        r = 0
+        n = <optimized out>
+        p_id = <optimized out>
+        reader_fd = {210, 211}
+        si = <optimized out>
+        ifp_sr_tcp = {proc_desc = 0x56356b1dc51d "SIP receiver TCP", flags = 4, type = TYPE_TCP}
+        __FUNCTION__ = "tcp_start_processes"
+        error = <optimized out>
+#4  0x000056356afbb9b4 in main_loop () at ./main.c:243
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 14
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#5  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1235) detached]
+
+
+---start 1234 (opensips    1234     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=161, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=161, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2714d000007f00, fd = 32512, u32 = 32512, u64 = 7721162969735790336}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 13
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1234) detached]
+
+
+---start 1233 (opensips    1233     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=159, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=159, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 12
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1233) detached]
+
+
+---start 1232 (opensips    1232     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=157, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=157, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 11
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1232) detached]
+
+
+---start 1231 (opensips    1231     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=155, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=155, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 10
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1231) detached]
+
+
+---start 1230 (opensips    1230     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=153, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=153, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 9
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1230) detached]
+
+
+---start 1229 (opensips    1229     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=151, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=151, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 8
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1229) detached]
+
+
+---start 1228 (opensips    1228     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=149, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=149, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 7
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1228) detached]
+
+
+---start 1227 (opensips    1227     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=147, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=147, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 6
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1227) detached]
+
+
+---start 1226 (opensips    1226     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=145, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=145, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 5
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1226) detached]
+
+
+---start 1225 (opensips    1225     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=143, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=143, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 4
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1225) detached]
+
+
+---start 1224 (opensips    1224     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=141, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=141, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 3
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1224) detached]
+
+
+---start 1223 (opensips    1223     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=139, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=139, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 2
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1223) detached]
+
+
+---start 1222 (opensips    1222     882  0 14:51 ?        00:00:01 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b38de3 in epoll_wait (epfd=137, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#0  0x00007f6c26b38de3 in epoll_wait (epfd=137, events=0x7f6c25dca720, maxevents=4, timeout=timeout@entry=1000) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        sc_ret = -4
+        sc_ret = <optimized out>
+#1  0x000056356b13bffd in io_wait_loop_epoll (repeat=<optimized out>, t=<optimized out>, h=<optimized out>) at net/../io_wait_loop.h:178
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = {events = 598894032, data = {ptr = 0x6b2710d000007f00, fd = 32512, u32 = 32512, u64 = 7721158571689279232}}
+        fd = <optimized out>
+        curr_time = <optimized out>
+        error = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+#2  0x000056356b1416b5 in udp_start_processes (chd_rank=chd_rank@entry=0x56356b273a38 <chd_rank>, startup_done=startup_done@entry=0x0) at net/net_udp.c:528
+        si = <optimized out>
+        p_id = <optimized out>
+        i = <optimized out>
+        p = <optimized out>
+        ifp_udp_rcv = {proc_desc = 0x56356b1e063f "UDP receiver", flags = 4, type = TYPE_UDP}
+        __FUNCTION__ = "udp_start_processes"
+        error = <optimized out>
+#3  0x000056356afbb9a1 in main_loop () at ./main.c:237
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 1
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1222) detached]
+
+
+---start 1221 (opensips    1221     882  0 14:51 ?        00:00:11 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b2e844 in __GI___select (nfds=nfds@entry=0, readfds=readfds@entry=0x0, writefds=writefds@entry=0x0, exceptfds=exceptfds@entry=0x0, timeout=timeout@entry=0x7ffc23b265d0) at ../sysdeps/unix/sysv/linux/select.c:69
+#0  0x00007f6c26b2e844 in __GI___select (nfds=nfds@entry=0, readfds=readfds@entry=0x0, writefds=writefds@entry=0x0, exceptfds=exceptfds@entry=0x0, timeout=timeout@entry=0x7ffc23b265d0) at ../sysdeps/unix/sysv/linux/select.c:69
+        sc_ret = -514
+        sc_ret = <optimized out>
+        s = <optimized out>
+        us = <optimized out>
+        ns = <optimized out>
+        ts64 = {tv_sec = 0, tv_nsec = 12287435}
+        pts64 = 0x7ffc23b26500
+        r = <optimized out>
+#1  0x000056356b06714b in run_timer_process () at ./timer.c:602
+        multiple = <optimized out>
+        cnt = <optimized out>
+        o_tv = {tv_sec = 0, tv_usec = 100000}
+        tv = {tv_sec = 0, tv_usec = 100000}
+        comp_tv = <optimized out>
+        drift = 0
+        uinterval = 100000
+        wait = <optimized out>
+        ij = <optimized out>
+        __FUNCTION__ = "run_timer_process"
+#2  start_timer_processes () at ./timer.c:745
+        id = <optimized out>
+        ifp_tk = {proc_desc = 0x56356b1889a4 "time_keeper", flags = 3, type = TYPE_NONE}
+        ifp_timer = {proc_desc = 0x56356b1889b0 "timer", flags = 3, type = TYPE_NONE}
+        __FUNCTION__ = "start_timer_processes"
+        error = <optimized out>
+#3  0x000056356afbb83f in main_loop () at ./main.c:231
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 0
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1221) detached]
+
+
+---start 1220 (opensips    1220     882  0 14:51 ?        00:00:12 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b2e844 in __GI___select (nfds=nfds@entry=0, readfds=readfds@entry=0x0, writefds=writefds@entry=0x0, exceptfds=exceptfds@entry=0x0, timeout=timeout@entry=0x7ffc23b265b0) at ../sysdeps/unix/sysv/linux/select.c:69
+#0  0x00007f6c26b2e844 in __GI___select (nfds=nfds@entry=0, readfds=readfds@entry=0x0, writefds=writefds@entry=0x0, exceptfds=exceptfds@entry=0x0, timeout=timeout@entry=0x7ffc23b265b0) at ../sysdeps/unix/sysv/linux/select.c:69
+        sc_ret = -514
+        sc_ret = <optimized out>
+        s = <optimized out>
+        us = <optimized out>
+        ns = <optimized out>
+        ts64 = {tv_sec = 0, tv_nsec = 587123}
+        pts64 = 0x7ffc23b26500
+        r = <optimized out>
+#1  0x000056356b066ee5 in run_timer_process_jif () at ./timer.c:643
+        umultiple = 10
+        drift = <optimized out>
+        last_ticks = 2080000000
+        last_sync = 2130000000
+        o_tv = <optimized out>
+        last_ts = {tv_sec = 1715693181, tv_usec = 426155}
+        interval = <optimized out>
+        multiple = 10
+        cnt = 5
+        ucnt = 7
+        tv = {tv_sec = 0, tv_usec = 10000}
+        sync_ts = {tv_sec = 1715693231, tv_usec = 525234}
+        multiple = <optimized out>
+        umultiple = <optimized out>
+        cnt = <optimized out>
+        ucnt = <optimized out>
+        o_tv = <optimized out>
+        tv = <optimized out>
+        sync_ts = <optimized out>
+        last_ts = <optimized out>
+        interval = <optimized out>
+        drift = <optimized out>
+        last_ticks = <optimized out>
+        last_sync = <optimized out>
+        __FUNCTION__ = "run_timer_process_jif"
+#2  start_timer_processes () at ./timer.c:733
+        id = <optimized out>
+        ifp_tk = {proc_desc = 0x56356b1889a4 "time_keeper", flags = 3, type = TYPE_NONE}
+        ifp_timer = {proc_desc = 0x56356b1889b0 "timer", flags = 3, type = TYPE_NONE}
+        __FUNCTION__ = "start_timer_processes"
+        error = <optimized out>
+#3  0x000056356afbb83f in main_loop () at ./main.c:231
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 0
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#4  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1220) detached]
+
+
+---start 1219 (opensips    1219     882  3 14:51 ?        00:01:19 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+fm_malloc (fm=0x7f6be5a2c000, size=24, file=<optimized out>, func=0x7f6be5936670 <__FUNCTION__.0> "os_malloc", line=105) at mem/f_malloc_dyn.h:115
+#0  fm_malloc (fm=0x7f6be5a2c000, size=24, file=<optimized out>, func=0x7f6be5936670 <__FUNCTION__.0> "os_malloc", line=105) at mem/f_malloc_dyn.h:115
+        frag = <optimized out>
+        n = <optimized out>
+        hash = 1677
+        __FUNCTION__ = "fm_malloc"
+#1  0x00007f6be59276dd in _shm_malloc (line=105, function=0x7f6be5936670 <__FUNCTION__.0> "os_malloc", file=0x7f6be5553c98 "../crypto/ct/ct_log.c", size=24) at ../../mem/shm_mem.h:402
+        p = <optimized out>
+        p = <optimized out>
+        hist = <optimized out>
+#2  os_malloc (size=24, file=0x7f6be5553c98 "../crypto/ct/ct_log.c", line=105) at ./modules/tls_openssl/openssl_helpers.h:89
+        __FUNCTION__ = "os_malloc"
+#3  0x00007f6be5431b59 in CRYPTO_zalloc () from /lib/x86_64-linux-gnu/libcrypto.so.3
+No symbol table info available.
+#4  0x00007f6be535e0f9 in CTLOG_STORE_new_ex () from /lib/x86_64-linux-gnu/libcrypto.so.3
+No symbol table info available.
+#5  0x00007f6be58ab547 in SSL_CTX_new_ex () from /lib/x86_64-linux-gnu/libssl.so.3
+No symbol table info available.
+#6  0x00007f6be592a2b1 in openssl_init_tls_dom (d=0x7f6be6105228, init_flags=4) at ./modules/tls_openssl/openssl_config.c:764
+        verify_mode = 0
+        i = 5
+        tcp_procs = <optimized out>
+        __FUNCTION__ = "openssl_init_tls_dom"
+#7  0x00007f6be58594a7 in init_tls_dom (d=0x7f6be6105228) at ./modules/tls_mgm/tls_mgm.c:673
+        init_flags = 4
+        init_flags = <optimized out>
+        __FUNCTION__ = "init_tls_dom"
+#8  init_tls_domains (dom=dom@entry=0x7ffc23b260e0) at ./modules/tls_mgm/tls_mgm.c:692
+        d = 0x7f6be6105228
+        tmp = <optimized out>
+        prev = 0x7f6be6106990
+        from_file = 0
+        db = <optimized out>
+        rc = <optimized out>
+        __FUNCTION__ = "init_tls_domains"
+#9  0x00007f6be585db18 in reload_data () at ./modules/tls_mgm/tls_mgm.c:809
+        script_srv_doms = 0x0
+        tls_client_domains_tmp = 0x7f6c0bec4078
+        tls_server_domains_tmp = 0x0
+        script_cli_doms = 0x0
+        dom = <optimized out>
+        tls_client_domains_tmp = <optimized out>
+        tls_server_domains_tmp = <optimized out>
+        script_cli_doms = <optimized out>
+        script_srv_doms = <optimized out>
+        dom = <optimized out>
+        __FUNCTION__ = "reload_data"
+        again = <optimized out>
+#10 tls_reload (params=<optimized out>, async_hdl=<optimized out>) at ./modules/tls_mgm/tls_mgm.c:876
+        __FUNCTION__ = "tls_reload"
+#11 0x000056356b113389 in handle_mi_request (req=<optimized out>, cmd=<optimized out>, async_hdl=0x0) at mi/mi.c:394
+        resp = <optimized out>
+        cmd_recipe = 0x7f6be5869200 <mi_cmds+32>
+        cmd_params = {item = 0x0, list = 0x7f6be5869208 <mi_cmds+40>}
+        params_err = <optimized out>
+        pos_params = <optimized out>
+        __FUNCTION__ = "handle_mi_request"
+#12 0x00007f6be595df40 in mi_fifo_callback (fd=<optimized out>, fs=<optimized out>, was_timeout=<optimized out>) at ./modules/mi_fifo/fifo_fnc.c:766
+        remain_len = 0
+        fifo_stream = <optimized out>
+        parse_end = 0x7f6c25c30d8c ""
+        request = {req_obj = 0x56356c541050, id = 0x56356c540f70, method = 0x56356c5411a0, params = 0x0, invalid = 0}
+        read_len = <optimized out>
+        parse_len = 0
+        req_method = <optimized out>
+        file_sep = <optimized out>
+        file = 0x7f6c25bb6278 "/tmp/opensips_fifo_reply_6461_1715693225_2920816"
+        p = <optimized out>
+        f = <optimized out>
+        cmd = 0x7f6c25c0c898
+        reply_stream = <optimized out>
+        hdl = <optimized out>
+        response = <optimized out>
+        rc = <optimized out>
+        buf = {s = 0x7f6c25c30d18 ":opensips_fifo_reply_6461_1715693225_2920816:{\"jsonrpc\": \"2.0\", \"id\": \"14609\", \"method\": \"tls_reload\", \"params\": {}}", len = 4096}
+        __FUNCTION__ = "mi_fifo_callback"
+#13 0x000056356b022984 in handle_io (fm=0x7f6c25c31dd8, event_type=1, idx=<optimized out>) at ./reactor_proc.c:79
+        n = 633544152
+        __FUNCTION__ = "handle_io"
+#14 0x000056356b024ced in io_wait_loop_epoll (h=<optimized out>, t=<optimized out>, repeat=<optimized out>) at ./io_wait_loop.h:305
+        ep_event = {events = 1797098208, data = {ptr = 0x100005635, fd = 22069, u32 = 22069, u64 = 4294989365}}
+        curr_time = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = 1
+        e = <optimized out>
+        fd = <optimized out>
+        i = <optimized out>
+        error = <optimized out>
+        ret = <optimized out>
+        n = <optimized out>
+        r = <optimized out>
+        i = <optimized out>
+        e = <optimized out>
+        ep_event = <optimized out>
+        fd = <optimized out>
+        curr_time = <optimized out>
+        again = <optimized out>
+        __FUNCTION__ = "io_wait_loop_epoll"
+        error = <optimized out>
+#15 reactor_proc_loop () at ./reactor_proc.c:113
+        __FUNCTION__ = "reactor_proc_loop"
+#16 0x00007f6be596027f in fifo_process (rank=<optimized out>) at ./modules/mi_fifo/mi_fifo.c:224
+        fifo_stream = 0x56356c5242a0
+        __FUNCTION__ = "fifo_process"
+#17 0x000056356b04f9ec in start_module_procs () at ./sr_module.c:876
+        ifp = {proc_desc = 0x7f6be596134f "MI FIFO", flags = 12, type = TYPE_MODULE}
+        m = 0x7f6c25a39040
+        n = 0
+        l = 0
+        flags = <optimized out>
+        x = <optimized out>
+        __FUNCTION__ = "start_module_procs"
+#18 0x000056356afbb6bf in main_loop () at ./main.c:216
+        startup_done = 0x0
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 0
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#19 main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = 0
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 1219) detached]
+
+
+---start 882 (opensips     882       1  2 14:50 ?        00:01:05 /usr/sbin/opensips -P /run/opensips/opensips.pid -f /etc/opensips/opensips.cfg -m 1024 -M 16)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f6c26b03d10 in __libc_pause () at ../sysdeps/unix/sysv/linux/pause.c:29
+#0  0x00007f6c26b03d10 in __libc_pause () at ../sysdeps/unix/sysv/linux/pause.c:29
+        sc_ret = -514
+        sc_ret = <optimized out>
+#1  0x000056356afbbc7a in main_loop () at ./main.c:325
+        startup_done = <optimized out>
+        last_check = 0
+        rc = <optimized out>
+        chd_rank = 25
+        startup_done = <optimized out>
+        last_check = <optimized out>
+        rc = <optimized out>
+        profiling_handler = {desc = 0x56356b16ae56 "_ProfilerStart_child()", on_child_init = 0x56356afee510 <_ProfilerStart_child>, _next = 0x0}
+        __FUNCTION__ = "main_loop"
+        error = <optimized out>
+#2  main (argc=<optimized out>, argv=<optimized out>) at ./main.c:966
+        c = <optimized out>
+        r = <optimized out>
+        tmp = 0x7ffc23b26e8c ""
+        tmp_len = <optimized out>
+        port = <optimized out>
+        proto = 0
+        protos_no = <optimized out>
+        options = 0x56356b16b120 "f:cCm:M:b:l:n:N:rRvdDFEVhw:t:u:g:p:P:G:W:o:a:k:s:"
+        ret = -1
+        seed = 3989812385
+        rfd = <optimized out>
+        procs_no = <optimized out>
+        __FUNCTION__ = "main"
+[Inferior 1 (process 882) detached]
